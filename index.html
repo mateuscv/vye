@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>vye</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grid">
+  <div class="v">V<span class="ye">ye</span></div>
+  <div class="flavor"><p id="flavor"></p></div>
+  <div class="buttons">
+    <a href="https://instagram.com/matt.vye" target="_blank" class="btn">instagram</a>
+    <a href="https://tiktok.com/@matt.vye" target="_blank" class="btn">tiktok</a>
+  </div>
+</div>
+<script>
+  const quotes = [
+    "she realized that the whispers were not, cared not, for her",
+    "I said I would call.",
+    "cause of death: [REDACTED]",
+    "they took turns",
+    "but also, they didn't",
+    "forever in the cold to rot"
+  ];
+  document.getElementById("flavor").textContent = quotes[Math.floor(Math.random() * quotes.length)];
+</script>
+</body>
+</html>
